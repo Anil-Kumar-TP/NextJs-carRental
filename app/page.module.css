@@ -1,0 +1,13 @@
+/* .sectionCommonStyles{
+    padding-inline: var(--inlinePaddingDesktop);
+}
+
+.sectionCommonStyles>.popularCarSection{
+   padding-inline: 0;
+}
+
+@media(max-width:835px){
+    .sectionCommonStyles{
+        padding-inline: 1rem;
+      }
+    } */

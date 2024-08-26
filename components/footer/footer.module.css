@@ -1,0 +1,250 @@
+/* company-profile-section Design Styles*/
+.footer{
+    margin-inline:calc(-1* var(--inlinePaddingDesktop));
+    padding-block: var(--inlinePaddingDesktop) 0;
+
+
+}
+.companyProfileSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    /* border: 2px solid green; */
+}
+
+.contact-section-container{
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        color: white;
+        position: relative;
+        padding-block: 2.5rem;
+        width: 100%;
+}
+
+.company-logo-section{
+
+    & img{
+        width: 3.54rem;
+        height: 4.125rem;
+    }
+    & p{
+        max-width: 6.5rem;
+        height: 2.25rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+}
+
+.footer-navigation-desktop{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+.footer-navigation-mobile{
+    display: none;
+}
+
+/* Styles For all the Links Present Inside the Tags */
+.footer-nav-main,.footer-nav-offers,.footer-nav-legal,.footer-nav-careers{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & a{
+        text-decoration: none;
+        color: white;
+        width: fit-content;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}
+
+.follow-us-container{
+text-align: center;
+& div{
+    display: flex;
+    padding-block: 1rem;
+}
+& img{
+    display: block;
+}
+}
+
+.socialMediaLinksContainer{
+    display: flex;
+    gap: 0.4rem;
+}
+
+/* To Alter the Background Color of The Icon Images */
+.imageBackgrounColorWhite{
+    filter: invert(100%);
+    border-radius: 0.25rem;
+}
+.sub-companies{
+  color: white;
+  padding-block: 0.8rem 0;
+  text-align: center;
+}
+.parent-company{
+    text-align: left;
+}
+.subCompanies-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.37rem;
+    padding-block: 1rem 2.25rem;
+    & a{
+        order: 1; 
+        width: fit-content;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.copyright-content{
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-top: 0.1rem solid rgba(255, 255, 255, 1);
+    color: white;
+    padding-block: 0.75rem;
+}
+.secure-Lock{
+    display: none;
+}
+
+#secure-Lock-small{
+    display:block;
+}
+/* branch-location-contanier Section Design */
+@media (max-width: 835px) {
+
+    .footer{
+        margin-inline:calc(-1* var(--inlinePaddingSmallerDevice));
+    
+    }
+    .branch-location-contanier{
+        padding: 1rem;
+        gap: 1.56rem;    
+    }
+    .location-item{
+        padding-right: 0rem;
+        border:none;
+        font-size: 0.87rem;
+
+    }
+    .company-profile-section{
+        background-color: white;
+    }
+
+    .company-logo-section{
+        display: flex;
+        gap: 0.8rem;
+        align-items: flex-end;
+        & p{
+            font-size: 7.77px;
+            max-width: 4.25rem;
+            color: black;
+        }
+    }
+    
+.contact-section-container{
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: white;
+}
+.footer-navigation-desktop{
+    display: none;
+}
+.footer-navigation-mobile{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding-inline: 0.4rem;
+    & a{
+        color: black;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}
+
+.footer-nav-main,.footer-nav-offers,.footer-nav-legal,.footer-nav-careers{
+    flex-direction: row;
+}
+.parent-company{
+    text-align: center;
+    font-size: 0.8125rem;
+    font-weight: 600;
+}
+.follow-us-container{
+    position: absolute;
+    top: 12%;
+    right: calc(var(--inlinePaddingSmallerDevice));
+    color: black;
+    & h3{
+
+        display: none;
+    }
+}
+.sub-companies{
+    width: 100%;
+    background-color: black;
+    
+}
+
+.subCompanies-Container{
+    padding-inline: 1.5rem;
+    letter-spacing: -0.035rem;
+}
+
+/* Chnaging the order of the sub-companies of the parent companies  */
+.subCompanies-Container >a:nth-of-type(1)
+.subCompanies-Container > a:nth-of-type(2){
+    order: 1;
+}
+.subCompanies-Container > a:nth-of-type(3){
+    order: 3;
+}
+.subCompanies-Container > a:nth-of-type(4){
+    order: 2;
+
+}
+.subCompanies-Container > a:nth-of-type(5),.subCompanies-Container > a:nth-of-type(6){
+    order: 4;
+}
+
+.copyright-content{
+    background-color: black;
+    color: white;
+}
+
+.footerIcon{
+    filter: invert(100%) sepia(0%) saturate(80%) hue-rotate(180deg) brightness(0.85) contrast(1.5);
+
+}
+
+.secure-Lock{
+    display: inline;
+}
+#secure-Lock-small{
+    display: none;
+}
+.imageBackgrounColorBlacK{
+        filter: invert(100%);
+        border-radius: 0.25rem;
+        
+}
+.imageBackgrounColorWhite{
+    filter: invert(0%);
+    border-radius: 0.25rem;
+}
+}
+/* To Alter the Background Color of The Icon Images */

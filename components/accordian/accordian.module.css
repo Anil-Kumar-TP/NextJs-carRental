@@ -1,0 +1,69 @@
+.frequentlyAskedQuestions{
+  padding-inline: 6rem;
+    & h2{
+        font-size: 2.125rem  2.125rem;
+        font-weight: 400;
+        text-align: center;
+        padding-block:3.5rem 4rem;
+  }
+}
+.accordianItem{
+    border: 0;
+  border-bottom: 0.18rem solid rgba(205, 214, 218, 0.25);
+}
+.accordianItem:last-of-type{
+  border: 0;
+}
+.accordianButton{
+  width: 100%;
+  padding-block: 1rem;
+  background-color: white;
+  text-align: start;
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  font-weight: 500;
+  }
+
+  .rotate45{
+    position: absolute;
+    right: 0;
+    transform: rotate(45deg);
+  }
+
+  .rotate90{
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg);
+
+  }
+
+  .accordianContent{
+    padding-block:0.6875rem 1.5rem ;
+    font-size: 0.875rem;
+    opacity: 50%;
+    font-weight: 400;
+  } 
+@media(max-width:835px){
+    .frequentlyAskedQuestions{
+    padding-inline: 0rem;
+
+        & h2{
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+            padding-block:1rem;
+      }
+      }
+      .accordianButton{
+        font-weight: 500;
+      }
+
+      .accordianContent{
+        opacity: 80%;
+        padding-block: 1rem;
+        font-size: 0.75rem;
+        line-height: 0.94rem;
+        padding-inline-end: 1rem;
+      }
+}

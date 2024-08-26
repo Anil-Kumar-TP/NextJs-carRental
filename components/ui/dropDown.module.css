@@ -1,0 +1,38 @@
+.dropdownContainer {
+  position: relative;
+  display: flex;
+}
+.startIcon {
+  position: absolute;
+  left: 1rem;
+  top: 30%;
+}
+.semiTransparentDropDowm {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 1rem;
+  padding: 0.4rem 0.8rem;
+  color: white;
+  flex: 1;
+}
+
+.semiTransparentDropDowm > option {
+  background-color: var(--primary-Color);
+  border-radius: 1rem;
+  flex: 1;
+}
+
+.normalDropDowm {
+  border-radius: 1rem;
+  padding: 0.4rem 1.8rem;
+  color: black;
+  flex: 1;
+}
+
+.semiTransparentDropDowm > option {
+  border-radius: 1rem;
+  flex: 1;
+}
+
+@media(max-width:835px){
+
+}

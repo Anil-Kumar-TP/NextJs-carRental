@@ -1,0 +1,5 @@
+.seperation{
+    /* Seperation btw search and quick book */
+    width: 0.5rem;
+    border-left: 1px solid white;
+}

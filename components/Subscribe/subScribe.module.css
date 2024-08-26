@@ -1,0 +1,194 @@
+/* exclusive-offer-section Design and links to download the app */
+.exclusiveOfferSection {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.5rem;
+    padding-left: 4.4rem;
+    gap: 2rem;
+    /* border: 2px solid blue; */
+    /* First Div Placed Inside the parent div */
+  }
+
+  .subscriptionContent{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 18rem;
+        gap: 2.5rem;
+        max-width: 30rem;
+        padding-top: 2.3rem;
+  }
+
+  .subscriptionHeading {
+    font-style: 2.1rem;
+    font-weight: 400;
+  }
+
+
+  .appDownloadContent{
+        flex: 1;
+        position: relative;
+        display: flex;
+        padding: 1rem 1.5rem;
+        gap: 0.4rem;
+        background-color: var(--primary-Color);
+        flex-basis: 28rem;
+  }
+
+ .subscriptionButton{ 
+  background-color: var(--primary-Color);
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+.downloadInfo{
+    flex: 1 0 10rem;
+    display: flex;
+  gap: 1.6rem;
+  padding: 0.4rem;
+  flex-direction: column;
+  margin: auto 0;
+  max-width: 20rem;
+}
+
+.user-input-boxes {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    & input {
+      flex: 1;
+      width: 13rem;
+      background-color: #f8f8f8;
+      height: 2.25rem;
+      padding: 0.2rem 0.4rem;
+    }
+  }
+  #downloadInstruction {
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+ 
+  /* Styles for the input Tag */
+  #input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    position: relative;
+  }
+
+  /* Styles for the  subscribe newsLetter */
+  #subscribeNewsLetter{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .userInputBoxes{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 0.4rem;
+  }
+
+  .inputFlex1{
+    flex: 1;
+    background-color: rgba(248, 248, 248, 1);
+    border: 0;
+    flex-basis: 10rem;
+  }
+  .generateLinkButton{
+    background-color: black;
+    color: white;
+    padding: 0.6rem 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+  }
+
+  .storeIconsContainerText{
+      color: white;
+      font-size: 0.875rem;
+      padding-bottom: 1rem
+  }
+  .storeIcons{
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  
+  @media(max-width:835px){
+
+    .downloadInfo{
+         flex-direction: column-reverse;
+    }
+.exclusiveOfferSection {
+    padding:0rem;
+    /* flex-direction: column; */
+
+}
+.subscriptionContent{
+    flex-basis: 24rem;
+    max-width: 100%;
+    padding-inline: 0rem;
+    gap: 1rem;
+}
+
+.subscriptionHeading {
+    font-size: 1rem;
+    max-width: 14rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  .subscriptionDescription{
+     font-size: 0.75rem;
+     font-weight: 300;
+     color: rgba(0, 0, 0, 1);
+  }
+.subscriptionButton{
+    width:max-content;
+}
+
+.appDownloadContent{
+    padding: 0rem 0.1rem;
+   gap: 0.4rem;
+   /* flex-basis: 21rem; */
+
+}
+.app-download-content > img {
+    width: 8.5rem;
+    height: 15rem;
+    padding-bottom: 1rem;
+  }
+
+
+  }
+  @media(max-width:650px){
+
+    .appDownloadContent{
+      padding-bottom: 6rem;
+    }
+    .appPhone{
+        width: 8.5rem;
+        height: 15rem;
+    }
+    .userInputBoxes{
+      flex-direction: column;
+    }
+    #inputGroup{
+        position: absolute;
+        padding: 0.8rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #downloadInstruction {
+      font-size: 0.75rem;
+    }
+
+    .storeIcons{
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+  
+  }

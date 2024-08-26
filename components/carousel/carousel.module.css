@@ -1,0 +1,92 @@
+.bannerWrapper {
+    position: relative;
+    padding-inline: 12.25rem;
+    padding-block: 15.25rem 6.25rem;
+    /* background-image: url("../../public/images/2018-Mitsubishi-backgroungImage.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0.5rem;
+    border-radius: 1.43rem;
+    display: flex;
+    justify-content: center;  
+  }
+
+
+  .offerContent{
+        display: flex;
+        gap: 0.8rem;
+        font-family: 'Poppins';
+  }
+  .offerContent,.offerContentWrapper>div:last-child{
+      color: white;
+      font-size: 1.125rem;
+      font-weight: 400;
+  }
+  .offerContentWrapper{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: start;
+    gap: 0.2rem;
+    margin-inline: auto;
+  }
+
+ .bannerButton {
+        width: 9.5rem;
+        height: 1.9rem;
+        padding: 0.33rem 1rem;
+        /* margin-left: -3.5rem; */
+        font-size: smaller;
+        border-radius: 1rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+        color: white;
+        background-color: #009046;
+      }
+
+      .carousel-navigator {
+        position: absolute;
+        left: 50%;
+        bottom: 1.875rem;
+        display: flex;
+        gap: 0.4rem;
+        z-index: 2;
+      }
+  
+  .circle-1{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .active {
+    background-color: rgba(255, 255, 255, 0.9);
+  
+  }
+  @media (max-width: 835px) {
+.bannerWrapper {
+    margin-top: 1rem;
+    padding-block: 8.55rem 3.125rem;
+    padding-inline: 1.6rem;
+    background-size: cover;
+    background-position: center;
+    margin-inline: -1rem;
+    border-radius: 0;
+
+  }
+  .bannerButton{
+    width: 5.06rem;
+    height: 1.049rem;
+    font-size: 0.5075rem;
+    border-radius: 0;
+    padding: 0rem 0.66rem;
+  }
+
+      
+  .carousel-navigator {
+    position: absolute;
+    left: 40%;
+    bottom: 1.175rem;
+  }
+}

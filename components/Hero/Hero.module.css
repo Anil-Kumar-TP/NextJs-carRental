@@ -1,0 +1,128 @@
+.border-0{
+    border: 0;
+
+}
+.bookingDownloadSection{
+    background-image: url('../../public/images/BannerBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:2.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+   border-radius: 1.5rem;
+}
+.bookingTypeContainer{
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.bookingOptionButton{
+    color: white;
+    background-color: transparent;
+}
+
+
+.bookingTypeContainer{
+    display: flex;  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+
+.whitebackground{
+  flex: 1;
+  padding: 0.4rem  2.5rem;
+}
+
+.buttonPadding{
+    padding:0.6875rem 4.75rem;
+    border-radius: var(--border-radius);
+}
+
+/* Third Row Desigin */
+.app-download-section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    padding-top: 0.4rem;
+    & p{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+}
+.store-links-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    
+   
+}
+.appStore{       
+    width: 6.875rem;
+    height: 2rem;
+    background-size: contain;
+    background-image: url('../../public/images/AppStore-Black.svg');        
+}
+.playStore{   
+    width: 6.875rem;
+    height: 2rem;
+    background-size: contain;  
+    background-image: url('../../public/images/BlackPlayStoreButton.svg');       
+}
+
+.supportOptionsContainer{
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 3rem;
+    height: 2.4rem;
+    border-top-left-radius:2rem;
+    border-bottom-left-radius:2rem;
+    background-color: white;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+     display: flex;
+     padding-left: 0.25rem;
+     align-items: center;
+     cursor: pointer;
+}
+.item1{
+    top: 10em;   
+}
+.item2{
+    top: 14rem;
+}
+
+@media(max-width:835px){
+    .bookingTypeContainer,.bookingTypeContainer{
+        display: none;
+    }
+    .bookingDownloadSection{
+    align-items: center;
+    }
+
+    .store-links-container{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .app-download-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item1{
+        top: 1em;   
+    }
+    .item2{
+        top: 4rem;
+    }
+}
+/* bookingTypeContainer */
+/* bookingTypeContainer */

@@ -1,0 +1,78 @@
+.rentalInstructions{
+    padding: 2.5rem 0rem;
+    & h2{
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+    }
+}
+/* Container for all the Different guide to lease the vehicle */
+.stepsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3.125rem;
+    padding-inline: 2.5rem;
+}
+
+  /* Which Conatin a Single Steps for the Process*/
+  .stepItem{
+    flex: 0 0 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline:auto ;
+    gap: 0.5rem;
+     
+     & .stepNumber{
+        font-size: 2.3rem;
+        width: 4rem;
+        height: 3.25rem;
+        color: #e21e26;
+        font-weight: 400;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        border-radius: 0.2rem;
+        text-align: center;
+     }
+}
+
+.stepDetails{
+    height: 11rem;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   font-size: 0.875rem;
+   border: 1px black solid;
+   padding:  0.6875rem 1em;
+   text-align: center;
+   & img{
+       display: block;
+       margin: 0 auto;
+   }
+}
+
+.stepDescription{
+font-size: 0.81rem;
+}
+
+@media(max-width:835px){
+    /* steps-container Desigin */
+    .stepItem{
+        flex: 0 0 21rem;
+    }
+  .rentalInstructions>h2{
+    /* & h2{ */
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        /* } */
+  }
+  .stepsContainer{
+    padding: 0rem;
+    gap: 1rem;
+  }
+
+}

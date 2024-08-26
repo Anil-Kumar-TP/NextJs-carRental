@@ -1,0 +1,133 @@
+.carCard{
+    display: flex;
+    /* &  */
+  }
+
+  .car-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    justify-content: space-evenly;
+    width: 24.625rem;
+    padding: 1.5rem 2.5rem;
+    border: 1px solid #d9d9d9;
+    & h3 {
+      font-weight: 500;
+      font-size: 1.675rem;
+      color: #1a202c;
+    }
+    & .car-item-description {
+      font-size: 0.75rem;
+      line-height: 1.15rem;
+    }
+  }
+
+  .vehicle-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.62rem;
+    overflow: hidden;
+    & div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+  .car-item-pricing {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.625rem;
+    align-items: center;
+  }
+
+  .car-item-button{
+    width: 6rem;
+    height: 2.25rem;
+    background-color: var(--primary-Color);
+    color: white;
+    border-radius: 0.25rem;
+    border: 0;
+  }
+  .vehicle-image {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .car-item-pricing> .car-item-price {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+
+  @media(max-width:835px){
+    .popular-cars-section {
+        height: 30rem;
+        & .carCard {
+          flex-direction: column;
+
+        }
+        & .car-item-details {
+          width: 12.9rem;
+          padding: 0.625rem;
+          overflow: hidden;
+        }
+      }
+
+      .car-item-description{
+        height: 3.4rem;
+        overflow: hidden;
+        /* border: 1px solid red; */
+        text-overflow: ellipsis;
+        line-height: 0.975rem;
+      }
+      .vehicle-image {
+        width: 12.9rem;
+        height: 7.9rem;
+      }
+      /* for vehicle Items */
+      .carCard {
+        flex-direction: column;
+
+      }
+
+      .car-item-pricing {
+        flex-direction: column;
+        gap: 0.4rem;
+        align-items: start;
+
+      }
+
+      .car-item-button{
+        width: 8rem;
+        height: 2.375rem;
+        background-color: var(--primary-Color);
+        color: white;
+        border-radius: 0.25rem;
+      }
+
+      /* Car Item Price Desigin */
+      .car-item-pricing> .car-item-price {
+        font-size: 0.8125rem;
+        font-weight: 600;
+      }
+
+      .car-item-details {
+
+        gap: 0.4rem;
+        width: 13rem;
+        padding: 0.625rem;
+        & h3 {
+          font-weight: 600;
+          font-size: 1rem;
+        }
+  
+        & .car-item-description {
+          opacity: 75%;
+        }
+      }
+
+
+  }

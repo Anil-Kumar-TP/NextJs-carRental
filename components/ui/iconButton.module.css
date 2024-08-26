@@ -1,0 +1,10 @@
+.backgroundWhite{
+    background-color: white;
+   padding: 0.4rem 0.6rem;
+   border-radius:1rem ;
+     cursor: pointer;
+}
+.buttonImage{
+    /* padding: 0.4rem; */
+    display: block;
+}

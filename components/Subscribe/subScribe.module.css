@@ -1,12 +1,10 @@
-/* exclusive-offer-section Design and links to download the app */
+
 .exclusiveOfferSection {
     display: flex;
     flex-wrap: wrap;
     padding-top: 2.5rem;
     padding-left: 4.4rem;
     gap: 2rem;
-    /* border: 2px solid blue; */
-    /* First Div Placed Inside the parent div */
   }
 
   .subscriptionContent{
@@ -78,7 +76,7 @@
     position: relative;
   }
 
-  /* Styles for the  subscribe newsLetter */
+ 
   #subscribeNewsLetter{
     display: flex;
     flex-direction: column;

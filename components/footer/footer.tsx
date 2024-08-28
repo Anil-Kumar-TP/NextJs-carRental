@@ -4,35 +4,23 @@ import footerCssStyles from './footer.module.css'
 import Link from 'next/link'
 
 
-// To Export Constant's Used
 import { footerNavSections, links } from '@/constants/footer'
 import { navItems } from '@/constants/footer'
 import { socialMediaLinks } from '@/constants/footer'
-
-// const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''; 
-
-
 
 const footer = () => {
   
  
   return (
-    //    Footer Section Regarding its Different Branches 
     <footer className={footerCssStyles.footer}>
-           {/* Comapny Profile Section  */}
             <section className={footerCssStyles.companyProfileSection}>
-              {/* First Container  showing the Footer Navigation Links  */}
                 <div className={footerCssStyles['contact-section-container']}>
-                    {/* Brand Logo and the Writings  */}
                     <div className={footerCssStyles["company-logo-section"]}>
                         <Image src="/icons/footer/footer-logo-new.svg"  className={footerCssStyles.footerIcon} alt="Company-Brand-logo" width={56} height={66}/>
                         <p>Member of the Al Habtoor Group</p>
                     </div>
-                    {/* Footer-Navigation-Links  */}
 
-                  {/* Display For Desktop View  */}
                     <div className={footerCssStyles['footer-navigation-desktop']}>
-                            {/* All the footer links */}
                         {footerNavSections.map(footerNavSection=>{
                             return <div  className={footerCssStyles[`footer-nav-${footerNavSection.section}`]} key={footerNavSection.section}>
                                   { footerNavSection.items.map(footerNavItem=>{
@@ -48,7 +36,6 @@ const footer = () => {
                                         return <Link  key={navItem.label} href={navItem.href}>{navItem.label}</Link>
                                     })}
                         </div>
-                        {/* Social-Media-Links  */}
                         <div className={footerCssStyles["follow-us-container"]}>
                             <h3>Follow Us On</h3>
                               <div  className= {footerCssStyles.socialMediaLinksContainer}>

@@ -1,9 +1,6 @@
 import React from "react";
 import InputContainerStyles from './Input.module.css';
 
-
-
-
 type InputProps ={
   placeholder?: string;
   cssClasses?: string;
@@ -17,11 +14,9 @@ const Input: React.FC<InputProps> = ({placeholder,cssClasses,name,erroMessage,er
 
     let inputCssStyles=InputContainerStyles.defaultStyles;
     let errorMessageClass=""
-    // the styles given to the input box
     if(cssClasses){
         inputCssStyles+=" "+cssClasses;
     }
-    // to  highlight the error Message the color given to that
     if(erroMessagClass==='black'){
       errorMessageClass=InputContainerStyles.blackColor
     }

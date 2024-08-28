@@ -89,24 +89,18 @@ const SubScribe = () => {
             <p  className={subscribeStyles.subscriptionDescription}>Don&apos;t miss out! enter your email and your name, then hit         subscribe to unlock a world of special offers and details.</p>
             <CustomButton type="submit" className={`${subscribeStyles.subscriptionButton} border-0 pointer`}>Subscribe</CustomButton>
             </form>
-
         </div>
 
 
-     {/*  Container for the app download content */}
+     
        <div className={subscribeStyles.appDownloadContent}>
-        {/* <Image/> Container */}
         <Image src="/images/AppPreview.png" width="231" height="417" alt="application on phine Screen" className={subscribeStyles.appPhone}/>
-         {/*  Container for download-related information*/}
         <div className={subscribeStyles.downloadInfo}>
-            {/* <!-- Text paragraph for download instruction --> */}
              <p  id={subscribeStyles.downloadInstruction}>Enter your number and receive  a direct link to download the app</p>
-                {/* <!-- Container for phone number input and button --> */}
                <form id={subscribeStyles.inputGroup} onSubmit={handlePhoneNumberCheck}>
                <Input placeholder="Enter Phone Number" name="phoneNumber"  erroMessage={phoneNumberValidations} cssClasses={subscribeStyles.inputFlex1} erroMessagClass="black"/>
                       <CustomButton type="submit" className={subscribeStyles.generateLinkButton}>Get The Link</CustomButton>
                </form>
-                 {/* <!-- Container for app store icons --> */}
                <div  className={subscribeStyles.storeIconsContainer}  id="icons">
                 <p  className={subscribeStyles.storeIconsContainerText}>Get in on</p>
                 <span className={subscribeStyles.storeIcons}>

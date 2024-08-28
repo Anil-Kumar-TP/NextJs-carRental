@@ -20,21 +20,18 @@ const MobileBooking = () => {
     }
   return (
     <div className={mobileBookingStyles.bookingOptionsWrapper}>
-        {/* Buttons for bookings */}
         <div className={mobileBookingStyles.bookingButtonsWrapper}>
                <CustomButton  onClick={showBookingOptions} className={`${mobileBookingStyles.buttonStyle} ${mobileBookingStyles.redButton}`}>Book a Car</CustomButton>
                <CustomButton onClick={showBookingOptions} className={`${mobileBookingStyles.buttonStyle} ${mobileBookingStyles.whiteButton}`}>Quick Book</CustomButton>
         </div>
-        {/* To show the  different pick up Options */}
         { isButtonClicked && <>
           <div className={mobileBookingStyles.bookingOptionWrapper}>
             <CustomButton  isSelected={selectedButton==='samePick'}  className={mobileBookingStyles.buttonfontSize} onClick={()=>handleBookingOption('samePick')} >Same as Pick-Up</CustomButton>
 
             <CustomButton isSelected={selectedButton==='differentPick'} className={mobileBookingStyles.buttonfontSize}  onClick={()=>handleBookingOption('differentPick')}>Different Drop-Off</CustomButton>
 
-            <DropDown className={`${mobileBookingStyles.padding0}`}  optionValues={[{optionLabel:"vehicle Type",optionValue:"default"},{optionLabel:"Seltos",optionValue:"Seltos"},{optionLabel:"Innova",optionValue:"innova"}]}/>
+            <DropDown className={`${mobileBookingStyles.padding0}`}  optionValues={[{optionLabel:"vehicle Type",optionValue:"default"},{optionLabel:"Audi",optionValue:"Audi"},{optionLabel:"BMW",optionValue:"BMW"}]}/>
         </div>
-        {/* Options For Different Pick Up */}
         <div className={mobileBookingStyles.bookingOptionsContainer}>
         { (selectedButton !=='samePick')  &&  <DropDown icon="/icons/DropDownLocation.svg" className={mobileBookingStyles.greyBackground} optionValues={[{optionLabel:"Pick Up Location",optionValue:"default"}]}/>}
 

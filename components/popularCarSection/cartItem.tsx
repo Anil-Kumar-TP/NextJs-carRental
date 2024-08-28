@@ -22,7 +22,6 @@ const cartItem:React.FC<CartItemProps> = ({cartItem}) => {
                 <p className={cardItemStyles["car-item-description"]}>{cartItem.about}.</p>
 
                 <div className={cardItemStyles["vehicle-info"]}>
-                    {/* <!-- Each Items tells about the  Specification  of the Vehicle--> */}
                     <div>
                         <Image src="/icons/Seating-Capacity.svg" width="12" height="15" alt="Seating-Capacity"/>
                         <p>{cartItem.seating} People</p>

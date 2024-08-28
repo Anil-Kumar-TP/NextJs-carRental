@@ -1,6 +1,6 @@
 type FooterNavItem= {
     label: string;
-    link: string; // You can add a link property if needed
+    link: string; 
   }
   
   type FooterNavSection= {
@@ -116,7 +116,7 @@ type FooterNavItem= {
     },
   ];
 
-//  an array of link items, each containing a href and text property  which tells about the fied in which the company is operated
+
   type LinkItem = {
     href: string;
     text: string;

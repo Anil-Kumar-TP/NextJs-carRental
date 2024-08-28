@@ -7,7 +7,6 @@ const customButton = ({children,className,onClick,isSelected,type='button'}:Cust
 
   let customCssStyles=`${className} ${customButtonStyles.regular}`;
 
-  // To highlight if the button is selected
   if(isSelected){
     customCssStyles+=` ${customButtonStyles.clicked}` 
   }

@@ -35,7 +35,6 @@ const Carousel = () => {
                           on a monthly hire or lease
                           </div>
         </div>
-        {/* Visual Indicator for the Carousel */}
         <div className={carouselStyles["carousel-navigator"]}>
             {indicators.map(indicator=>{
               return  <div   key={indicator} className={`${carouselStyles["circle-1"]} ${backGroundImageIndex==indicator?`${carouselStyles.active}`:''}`} ></div>
